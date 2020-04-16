@@ -110,18 +110,29 @@ function App() {
                 <Statistic title="Date" value={invoice.date} />
               </Col>
             </Row>
-            <Row gutter={16}>
-              <Col span={12}>
+            <br></br>
+            <Row>
+              <Col span={8}>
                 <Statistic title="Company" value={invoice.company} />
               </Col>
-              <Col span={12}>
+              <Col span={8}>
                 <Statistic
                   title="Amount (EUR)"
                   value={invoice.amount}
                   precision={2}
                 />
               </Col>
+              <Col span={8}>
+                <Statistic
+                  title="Amount (TRY)"
+                  value={invoice.amount * 7.5}
+                  precision={2}
+                />
+              </Col>
             </Row>
+            <Row>
+
+
             <PaymentInputsWrapper
               {...wrapperProps}
               styles={{
@@ -153,10 +164,10 @@ function App() {
                     color: maroon;
                   `,
                   cardNumber: css`
-                    width: 20rem;
+                    width: 16rem;
                   `,
                   expiryDate: css`
-                    width: 10rem;
+                    width: 8rem;
                   `,
                   cvc: css`
                     width: 5rem;
@@ -184,6 +195,7 @@ function App() {
                 value={cvc}
               />
             </PaymentInputsWrapper>
+            </Row>
             <Row>
               <Col span={24}>
                 <Button size="large" style={{ marginTop: 16 }} type="primary" shape="round">
