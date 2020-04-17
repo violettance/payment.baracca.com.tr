@@ -199,7 +199,7 @@ function App() {
             <Row>
               <Col span={24}>
                 <Button size="large" style={{ marginTop: 16 }} type="primary" shape="round">
-                  Pay ( {invoice.amount}€ )
+                  Pay ( {invoice.amount * 7.5 }₺ )
                 </Button>
               </Col>
             </Row>
