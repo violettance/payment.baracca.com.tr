@@ -17,17 +17,20 @@ const invoices = {
   1111: {
     company: 'Ultra Turizm',
     date: '01.04.2020',
-    amount: 300
+    amount: 300,
+    service: "Convention-Rome-1 Aug 2020 3 Aug 2020-Mr. Ali Er"
   },
   2222: {
     company: 'Ultra Turizm',
     date: '31.03.2020',
-    amount: 5000
+    amount: 5000,
+    service: "Convention-Rome-1 Aug 2020 3 Aug 2020-Mr. Ali Er"
   },
   3333: {
     company: 'Ultra Turizm',
     date: '02.04.2020',
-    amount: 1490
+    amount: 1490,
+    service: "Convention-Rome-1 Aug 2020 3 Aug 2020-Mr. Ali Er"
   }
 };
 
@@ -111,8 +114,12 @@ function App() {
         {invoice && (
           <div>
             <Row>
-              <Col span={8} offset={8}>
-                <Statistic style={{ textAlign: "center" }} title="Date" value={invoice.date} />
+              <Col span={9}>
+                <Statistic title="Date" value={invoice.date} />
+              </Col>
+           
+              <Col span={15}>
+                <Statistic title="Service" value={invoice.service} />
               </Col>
             </Row>
             <br></br>
