@@ -18,19 +18,19 @@ const invoices = {
     company: 'Ultra Turizm',
     date: '01.04.2020',
     amount: 300,
-    service: "Convention-Rome-1 Aug 2020 3 Aug 2020-Mr. Ali Er"
+    service: "Transfer:	Beijing Airport-Jen Beijing by Shangri-La / Alper Akar	5 Dec 2019"
   },
   2222: {
     company: 'Ultra Turizm',
     date: '31.03.2020',
     amount: 5000,
-    service: "Convention-Rome-1 Aug 2020 3 Aug 2020-Mr. Ali Er"
+    service: "Transfer:	Beijing Airport-Jen Beijing by Shangri-La / Alper Akar	5 Dec 2019"
   },
   3333: {
     company: 'Ultra Turizm',
     date: '02.04.2020',
     amount: 1490,
-    service: "Convention-Rome-1 Aug 2020 3 Aug 2020-Mr. Ali Er"
+    service: "Transfer:	Beijing Airport-Jen Beijing by Shangri-La / Alper Akar	5 Dec 2019"
   }
 };
 
@@ -119,7 +119,7 @@ function App() {
               </Col>
            
               <Col span={15}>
-                <Statistic title="Service" value={invoice.service} />
+                <Statistic title="Service" valueStyle={{fontSize: "17px"}} value={invoice.service} />
               </Col>
             </Row>
             <br></br>
